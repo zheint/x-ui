@@ -1,5 +1,3 @@
-version: '3.9'
-
 x-common:
   &common
   logging:
@@ -27,10 +25,10 @@ services:
   x-ui:
     <<: *common
     container_name: x-ui
-    image: enwaiax/x-ui:beta
+    image: ghcr.io/mhsanaei/3x-ui:2.4.6
     restart: unless-stopped
-    depends_on:
-        - certbot
+    # depends_on:
+    #     - certbot
     volumes:
         - ./volume/db/:/etc/x-ui
         - /etc/letsencrypt/:/etc/letsencrypt # Must mount the entire directory!
