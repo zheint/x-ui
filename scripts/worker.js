@@ -1,6 +1,6 @@
-XUI_HOSTNAME = "<xui.example.com>"  // X-UI dashboard URL (Exclude port and protocol)
+XUI_HOSTNAME = "zhein3t.zheint.xyz"  // X-UI dashboard URL (Exclude port and protocol)
 XUI_PROTOCOL = "https"              // Force TLS. Options: http, https
-XUI_INBOUND_PORT = 443;             // X-UI Inbound port. Options: 80, 443, 2052, 2053, 2082, 2083, 2086, 2087, 2095, 2096, 8080, 8443, 8880
+XUI_INBOUND_PORT = 2083;             // X-UI Inbound port. Options: 80, 443, 2052, 2053, 2082, 2083, 2086, 2087, 2095, 2096, 8080, 8443, 8880
 
 addEventListener(
   "fetch", event => {
